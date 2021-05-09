@@ -1,0 +1,120 @@
+div#content{
+    font-family: cursive;
+    display: grid;
+    position: relative;
+    width: 500px;
+    height: 650px;
+    left: 10%;
+    color: snow;
+    transform: translate(50%, 5%);
+    background-color: rgb(56, 56, 56);
+    border-radius: 15px;
+    grid-template-rows: 20% 60% 20%;
+    box-shadow: 1px 5px 12px 4px  rgb(228, 44, 44);;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+header{
+    display: grid;
+    grid-template-rows: repeat(2, 30px);
+    grid-template-areas: 
+    '. . data'
+    'h2 h2 h2';
+    border-bottom: 2px dotted snow;
+}
+
+h2{
+    grid-area: h2;
+    text-align: center;
+}
+
+span{
+    grid-area: data;
+}
+
+ul{
+    position: absolute;
+    width: 280px;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    grid-area: lista;
+}
+
+input{
+    margin-left: 5%;
+}
+input[type=button]{
+    position:fixed;
+    border: 1px;
+    color: snow;
+    background-color: rgb(228, 44, 44);
+    border-radius: 4px;
+    width: 80px;
+    height: 20px;
+    top: 83%;
+    left: 65%;
+    grid-area: btn;
+}
+
+input[type=text]{
+    position: fixed;
+    top: 83%;
+    width: 300px;
+    height: 20px;
+    border: 0px;
+    grid-area: nowy;
+}
+
+article{
+    border-bottom: 1px solid snow;
+    display: grid;
+    grid-area: main;
+    row-gap: 10px;
+    grid-template-areas: 
+    'lista .'
+    'nowy btn'
+    'komunikat .';
+}
+
+footer{
+    position: fixed;
+    top: 50%;
+    left: 25%;
+    padding: 20px;
+    display: grid;
+    grid-area: footer;
+    grid-template-areas: 
+    'design logo';
+}
+
+footer p{
+    grid-area: design;
+}
+footer img{
+    position: relative;
+    left: 15%;
+    width: 100px;
+    height: auto;
+    grid-area: logo;
+}
+
+.wrong{
+    background-color: rgb(245, 42, 42);
+}
+
+p{
+    top: 50%;
+    left: 50%;
+    transform: translate(25%, -90%);
+    margin-left: 5%;
+    color: rgb(255, 0, 0);
+    grid-area: komunikat;
+}
+
+.oneClicked{
+    color: greenyellow;
+    margin-left: 5%;
+}
