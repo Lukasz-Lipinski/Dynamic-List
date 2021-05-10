@@ -4,9 +4,9 @@ div#content{
     position: relative;
     width: 500px;
     height: 650px;
-    left: 10%;
+    left: 20%;
     color: snow;
-    transform: translate(50%, 5%);
+    transform: translate(40%, 5%);
     background-color: rgb(56, 56, 56);
     border-radius: 15px;
     grid-template-rows: 20% 60% 20%;
@@ -54,14 +54,14 @@ input[type=button]{
     border-radius: 4px;
     width: 80px;
     height: 20px;
-    top: 83%;
+    top: 81%;
     left: 65%;
     grid-area: btn;
 }
 
 input[type=text]{
     position: fixed;
-    top: 83%;
+    top: 81%;
     width: 300px;
     height: 20px;
     border: 0px;
@@ -70,6 +70,7 @@ input[type=text]{
 
 article{
     border-bottom: 1px solid snow;
+    height: 380px;
     display: grid;
     grid-area: main;
     row-gap: 10px;
@@ -80,6 +81,7 @@ article{
 }
 
 footer{
+    border-top: 1px dotted snow;
     position: fixed;
     top: 50%;
     left: 25%;
@@ -106,9 +108,9 @@ footer img{
 }
 
 p{
-    top: 50%;
-    left: 50%;
-    transform: translate(25%, -90%);
+    position: absolute;
+    top: 82%;
+    left: 25%;
     margin-left: 5%;
     color: rgb(255, 0, 0);
     grid-area: komunikat;
